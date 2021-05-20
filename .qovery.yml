@@ -1,0 +1,20 @@
+---
+application:
+  name: "docker-wordpress"
+  project: "docker wordpress"
+  organization: "QoveryCommunity"
+  storage:
+  - name: "lee"
+    size: "10"
+    type: "ssd"
+    mount_point: "/mnt/lee"
+databases:
+- type: "MYSQL"
+  name: "quoc"
+  version: "8.0"
+routers:
+- name: "main-docker-wordpress"
+  routes:
+  - application_name: "docker-wordpress"
+    paths:
+    - "/*"
