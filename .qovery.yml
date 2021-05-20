@@ -3,7 +3,9 @@ application:
   name: "docker-wordpress"
   project: "docker wordpress"
   organization: "QoveryCommunity"
-  storage:
+  publicly_accessible: true
+  port: 80
+storage:
   - name: "lee"
     size: "10"
     type: "ssd"
